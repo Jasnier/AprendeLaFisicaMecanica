@@ -1,0 +1,966 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    --gold1:#F4BD76;
+    --gold2:#F6CD8F;
+    --gray:#ffffff80;
+    --gray2:#f7d9d990;
+    --black1: #1A1B1F;
+    --black2: #30353B;
+    --shadow: 0 8px 8px;
+    --color_shadow: #00000033;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+  
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding:100px 0;
+    height: auto;
+}
+
+.container--modifier{
+    width: 60%;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: black;
+}
+
+.nav__hero{
+    color: #fff;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255, 0.1);
+    position: fixed;
+    background: black;
+    z-index: 2;
+}
+
+.nav__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    padding: 0;
+}
+
+.logo__name{
+    font-size: 24px;
+}
+
+.link{
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.link--active{
+    color: var(--gold1);
+    font-weight: 700;
+}
+
+.point{
+    color: var(--gold1);
+}
+
+.hero__main{
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0;
+}
+
+.mockup{
+    object-fit: cover;
+    width: 48%;
+    max-height: 90vh;
+}
+
+.hero__textos{
+    width: 48%;
+}
+
+.title{
+    font-size: 56px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.title--active{
+    color: var(--gold1);
+    font-weight: 700;
+}
+
+.copy{
+    font-size: 24px;
+    color: var(--gray);
+    text-shadow: var(--shadow)  var(--color_shadow);
+    margin: 15px 0;
+}
+
+.copy__active{
+    font-weight: 700;
+}
+
+.cta{
+    padding: 20px 30px;
+    display: inline-block;
+    background: linear-gradient(180deg, #F7CE90 0%, #F4BD76 100%);
+    text-decoration: none;
+    color: var(--black2);
+    font-weight: 700;
+    box-shadow: var(--shadow) var(--color_shadow);
+    border-radius: 6px;
+}
+
+/* services */
+
+.services{
+    background: #fff;
+}
+
+.subtitle{
+    font-size: 42px;
+    
+}
+
+.subtitle--modifier{
+    text-align: center;
+    margin-bottom: 16px;
+}
+.cajita{
+    width: 90%;
+    height:0%;
+    background: linear-gradient(180deg, #F7CE90 0%, #F4BD76 100%);
+    padding: 30px;
+    margin-bottom: 70px;
+}
+.copy__section{
+    color: var(--black2);
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 40px;
+  
+}
+.copy__section_subtitle{
+    color: black;
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 60px;
+    border-bottom: solid 2px black;
+}
+.copy__section_title{
+    color: black;
+    font-size: 35px;
+    line-height: 32px;
+    
+}
+
+
+.tabla-contenido{
+    color: rgb(46, 43, 43);
+    font-size: 23px;
+    margin-left: 20px;
+    line-height: 32px;
+    margin-bottom: 60px;
+}
+.tex-deco{
+    color: black;
+    text-decoration: none;
+}
+.tex-deco:hover{
+    color: blue;
+    text-decoration: none;
+}
+.numeracion{
+    margin-left: 25px;
+}
+.numeracion2{
+    margin-left: 35px;
+    
+}
+.infovec .subtitle{
+    padding-top: 100px;
+}
+.Formula{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.caja_imagenes{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.img-vec{
+    width: 250px;
+    height: 250px;
+}
+.img-trian{
+    width: 600px;
+    height: 400px;
+
+}
+
+.img-pla{
+    width: 600px;
+    height: 600px;
+    
+    
+}
+.img-plan{
+    width: 600px;
+    margin: auto;
+    margin-top: 30px;
+}
+.img-planv{
+    width: 250px;
+    margin: auto;
+}
+.img-gr{
+    width: 300px;
+    height: 450px;
+}
+.img-gra{
+    width: 300px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.img-planc{
+    width: 370px;
+    margin: auto;
+    margin-top: 30px;
+}
+.img-larga{
+    width: 820px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.img-larg{
+    width: 800px;
+}
+.img-plac{
+    width: 370px;
+    height: 370px;
+}
+.title-ejemlo{
+    color: #F4BD76;
+    font-size: 30px;
+    margin-top: 80px;
+
+}
+.img-eje{
+    width: 600px;
+    margin-bottom: 60px;
+}
+.video{
+    width: 350px;
+    height: 208px;
+    background-color: black;
+    padding: 4px;
+    
+}
+
+.copy__section--modifier{
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 30%;
+    padding: 30px 0;
+    overflow: hidden;
+    background: black;
+    border-radius: 10px;
+    position: relative;
+    text-align: right;
+    margin-bottom: 60px;
+    box-shadow: 0 0 6px var(--color_shadow);
+}
+
+.card__img{
+    width: 95%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.cards__text{
+    text-align: left;
+    width: 90%;
+    margin:0 auto;
+}
+
+.card__list{
+    color: var(--gold2);
+    font-weight: 700;
+    margin: 25px 0 12px ;
+    font-size: 18px;
+}
+
+
+.card__title{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.card__copy{
+    color: var(--gray2);
+    margin-bottom: 16px;
+}
+
+.card__button{
+    display: block;
+    background: linear-gradient(180deg, #F7CE90 0%, #F4BD76 100%);
+    border-radius: 6px;
+    text-decoration: none;
+    width: 100%;
+    color: var(--black1);
+    font-weight: 700;
+    text-align: center;
+    padding: 12px 0;
+}
+.card__buttonp{
+    display: block;
+    background: #5f5f5e;
+    border-radius: 6px;
+    text-decoration: none;
+    width: 100%;
+    color: var(--black1);
+    font-weight: 700;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.card__date{
+    color: var(--gold2);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.container-bg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.background{
+    width: 68%;
+    height: 290px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.background__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.background__text{
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    left: 15px;
+    color: #fff;
+}
+
+.background__title{
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+/* check */
+
+.check{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.check__item{
+    width: 30%;
+    padding-right: 10px;
+    display: flex;
+    border-right: 2px solid var(--black2);
+}
+
+.bx-check{
+    background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-right: 20px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 40px;
+}
+
+.check__number{
+    font-weight: 700;
+}
+
+.check__copy{
+    font-weight: 300;
+}
+
+
+
+
+@media screen and (max-width:1000px){
+    .mockup{
+        width: 600px;
+        height: auto;
+    }
+
+    .title{
+        font-size: 50px;
+    }
+
+    .copy{
+        font-size: 22px;
+    }
+    .cajita{
+        width: 95%;
+        margin: auto;
+        height: 0%;
+    }
+    .copy__section_title{
+        font-size: 30px;
+    }
+    .tabla-contenido{
+        font-size: 20px;
+    }
+    .img-vecs{
+        width: 100%;
+        height: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-trian{
+        width: 100%;
+        height: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-pla{
+        width: 95%;
+        height: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-plan{
+        width: 95%;
+        height: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-planv{
+        width: 95%;
+        height: 0%;
+        margin: auto;
+    }
+    .img-gr{
+        width: 90%;
+        height: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+    .img-planc{
+        width: 95%;
+        height: 0%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .img-larga{
+        width: 95%;
+        height: 0%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .img-larg{
+        width: 95%;
+        height: 0%;
+        margin: auto;
+    }
+    .img-plac{
+        width: 95%;
+        height: 0%;
+        margin: auto;
+    }
+    .img-vecsc{
+        width: 30%;
+        height: 0%;
+        margin-left:35%;
+        margin-right: 35%;
+    }
+    .Formula{
+        font-size: 30px;
+    }
+    .img-eje{
+        width: 95%;
+        height: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .video{
+        margin: 20px;
+    }
+    .cta{
+        padding: 15px 22px;
+    }
+
+    .container-cards{
+        justify-content: space-evenly;
+    }
+
+    .services .card{
+        width: 45%;
+    }
+
+    .background{
+        width: 52%;
+    }
+
+    .card{
+        width: 42%;
+    }
+
+    .testimony-container{
+        justify-content: space-evenly;
+    }
+
+    .testimony__card{
+        width: 45%;
+    }
+
+    .check__item{
+        width: 45%;
+        margin-bottom: 35px;
+    }
+
+
+    .download{
+        width: 100%;
+    }
+
+    .download__app{
+        justify-content: space-between;
+    }
+
+    .download__item{
+        width: 45%;
+    }
+
+    .get-email{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .socialmedia__icon{
+        font-size: 18px;
+    }
+
+    .socialmedia__legend{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:700px){
+    main .container,
+    footer .container{
+        padding: 60px 0;
+    }
+    .mockup{
+        margin-top: 100px;
+    }
+    .hero{
+        
+        width: 100%;
+        height: 600px;
+    }
+    .nav__container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .nav__hero{
+        height: auto;
+    }
+
+    .logo{
+        padding: 15px 0 ;
+        text-align: center;
+    }
+
+    .links{
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .link{
+        padding: 7px 10px;
+    }
+
+
+    .hero__main{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        min-height: 70px;
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .hero__textos{
+        width: 100%;
+        text-align: center;
+    }
+
+    .mockup{
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .title{
+        font-size: 35px;
+    }
+
+    .copy{
+        font-size: 20px;
+    }
+    .cajita{
+        width: 95%;
+        margin: auto;
+        height: 0%;
+    }
+    .copy__section_title{
+        font-size: 25px;
+    }
+    .tabla-contenido{
+        font-size: 20px;
+    }
+    .img-vecs{
+        width: 100%;
+        height: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-trian{
+        width: 100%;
+        height: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-pla{
+        width: 95%;
+        height: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-plan{
+        width: 95%;
+        height: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-planv{
+        width: 95%;
+        height: 0%;
+        margin: auto;
+    }
+    .img-gr{
+        width: 60%;
+        height: 0%;
+        margin-left:20%;
+        margin-right: 20%;
+    }
+    .img-planc{
+        width: 95%;
+        height: 0%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .img-larga{
+        width: 95%;
+        height: 0%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .img-larg{
+        width: 95%;
+        height: 0%;
+        margin: auto;
+    }
+    .img-plac{
+        width: 95%;
+        height: 0%;
+        margin: auto;
+    }
+    .img-vecsc{
+        width: 30%;
+        height: 0%;
+        margin-left:35%;
+        margin-right: 35%;
+    }
+    .Formula{
+        font-size: 30px;
+    }
+    .img-eje{
+        width: 95%;
+        height: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .video{
+        margin: 20px;
+    }
+
+    .subtitle{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .copy__section{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .services .card{
+        width: 80%;
+    }
+
+    .container-bg{
+        justify-content: space-evenly;
+    }
+
+    .card{
+        margin-bottom: 40px;
+        width: 65%;
+    }
+
+    .card__title{
+        font-size: 35px;
+    }
+
+    .card__button{
+        width: 100%;
+    }
+
+    .background{
+        width: 65%;
+        margin-bottom: 40px;
+    }
+
+    .background__copy{
+        display: none;
+    }
+
+    .testimony__card{
+        width: 65%;
+    }
+
+    .testimony__name{
+        font-size: 20px;
+    }
+
+    .container--modifier{
+        width: 80%;
+    }
+
+    .item__contact{
+        width: 100%;
+        padding: 30px 0;
+    }
+}
+
+@media screen and (max-width:500px){
+    .hero{
+        width: 100%;
+        height: 700px;
+       
+    }
+    .nav__hero{
+        position: relative;
+    }
+    .mockup{
+        width: 80%;
+        margin-bottom: 15px;
+    }
+    .cajita{
+        width: 95%;
+        margin: auto;
+        height: 0%;
+    }
+    .copy__section_title{
+        font-size: 20px;
+    }
+    .tabla-contenido{
+        font-size: 18px;
+    }
+    .caja_imagenes{
+        display: block;
+    }
+    .img-vec{
+        width: 90%;
+        height: 0%;
+    }
+    .img-vecs{
+        width: 100%;
+        height: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-trian{
+        width: 100%;
+        height: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .caja_img_in{
+        margin-bottom: 50px;
+        font-size: 30px;
+    }
+    .services .card{
+        width: 95%;
+    }
+
+    .card{
+        width: 95%;
+    }
+
+    .background{
+        width: 95%;
+    }
+
+    .testimony__card{
+        width: 95%;
+    }
+
+    .testimony__history{
+        font-size: 20px;
+    }
+
+    .container--modifier{
+        width: 90%;
+    }
+    .img-pla{
+        width: 95%;
+        height: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-plan{
+        width: 95%;
+        height: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img-planv{
+        width: 95%;
+        height: 0%;
+        margin: auto;
+    }
+    .img-gr{
+        width: 60%;
+        height: 0%;
+        margin-left:20%;
+        margin-right: 20%;
+    }
+
+    .img-planc{
+        width: 95%;
+        height: 0%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .img-larga{
+        width: 95%;
+        height: 0%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .img-larg{
+        width: 95%;
+        height: 0%;
+        margin: auto;
+    }
+    .img-plac{
+        width: 95%;
+        height: 0%;
+        margin: auto;
+    }
+    .img-vecsc{
+        width: 30%;
+        height: 0%;
+        margin-left:35%;
+        margin-right: 35%;
+    }
+    .Formula{
+        font-size: 30px;
+    }
+    .img-eje{
+        width: 95%;
+        height: 0%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .video{
+        margin: 20px;
+    }
+    .check__item{
+        width: 100%;
+        border: none;
+        padding: none;
+        justify-content: center;
+    }
+
+    .download__item{
+        width: 49%;
+    }
+
+    .download__title{
+        font-size: 16px;
+    }
+
+    .download__logo{
+        font-size: 30px;
+    }
+}

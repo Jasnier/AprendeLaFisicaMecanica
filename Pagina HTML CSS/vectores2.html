@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AprendeLaFísicaMecánica</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="nav__hero">
+            <div class="container nav__container">
+                <div class="logo">
+                    <h2 class="logo__name">AprendeLaFísicaMecánica<span class="point">.</span></h2>
+                </div>
+                <div class="links">
+                    <a href="#" class="link">Inicio</a>
+                    <a href="#" class="link">Servicios</a>
+                    <a href="#" class="link">Proyectos</a>
+                    <a href="#" class="link">Clientes</a>
+                    <a href="#" class="link link--active">Contacto</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="container hero__main">
+            <div class="hero__textos">
+                <h1 class="title"><span class="title--active">Vectores</span> <b>Intermedio</b></h1>
+                <p class="copy">En este curso aprenderas conceptos de nivel intermedio relacionados con <span
+                        class="copy__active">Vectores</span></p>
+                <a href="index.html" class="cta">Volver a la pagina principal</a>
+            </div>
+            <img src="img/img-fondo-vectores-avanzado.jpg" class="mockup">
+        </section>
+    </header>
+
+    <main>
+        <section class="services">
+            <div class="container" id="Inicia">
+                <h2 class="subtitle">Vectores<span class="point">.</span></h2>
+                <p class="copy__section_subtitle"><b> Nivel:</b>Intermedio.</p>
+                <div class="cajita">
+                    <p class="copy__section_title">
+                        <b>Contenido del curso:<br></b>
+                    </p>
+
+                    <p class="tabla-contenido">
+                        <b>1.</b><a href="#sumavector" class="tex-deco"> Operaciones con Vectores. <br></a>
+                        <b class="numeracion">1.1</b><a href="#vectorcolineal" class="tex-deco">Suma y resta de Vectores
+                            Colineales. <br></a>
+                        <b class="numeracion">1.2</b> <a href="#vectorconcurrente" class="tex-deco"> Suma y resta de
+                            Vectores Concurrentes. </a><br>
+                        <b class="numeracion2">1.2.1</b> <a href="#triangulo" class="tex-deco"> Suma y resta de Vectores
+                            Concurrentes metodo del triangulo</a> <br>
+                        <b class="numeracion2">1.2.2</b> <a href="#paralelogramo" class="tex-deco"> Suma y resta de
+                            Vectores Concurrentes metodo del paralelogramo</a> <br>
+                        <b class="numeracion2">1.2.3</b> <a href="#poligono" class="tex-deco"> Suma y resta de Vectores
+                            Concurrentes metodo del poligono</a> <br>
+                        <b>2</b> <a href="" class="tex-deco"> Descomposicion de vectores</a> <br>
+                    </p>
+                </div>
+
+                <section class="infovec" id="sumavector">
+                    <h3 class="subtitle">Operaciones con Vectores</h3>
+                    <p class="copy__section">
+                        Las operaciones que se desarrollaran en este curso seran suma y resta de vectores, estas
+                        operaciones tienen un proceso
+                        el cual depende del tipo de vector con el que se piense operar, los tipos de
+                        vectores son dos que son los <br> <a href="">Vectores Colineales</a> y los <a href="">Vectores
+                            Concurrentes</a>
+                        los cuales se diferencian por las lineas de accion que contienen.
+
+                    </p>
+
+
+                    <div class="caja_imagenes copy__section">
+                        <div class="caja_img_in">
+                            <img src="img/ejemplovectorcolineal.png" alt="" class="img-vec">
+                            <p>Vector Colineal</p>
+                        </div>
+                        <div class="caja_img_in">
+                            <img src="img/ejemplovectorconcurrente.png" alt="" class="img-vec">
+                            <p>Vector Concurrente</p>
+                        </div>
+                    </div>
+                    <p class="copy__section">
+                        La suma y resta de dos vectores A y B, da como resultado otro vector, es decir:
+                    </p>
+                    <p class="Formula">
+                        <b>A</b> + <b>B</b> = <b>C</b> y <b>A</b> - <b>B</b> = <b>C</b>
+                    </p>
+
+                    <h3 class="subtitle" id="vectorcolineal">Suma y Resta de Vectores Colineales</h3>
+                    <img src="/img/vectorescolineales.jpg" alt="" class="img-vecs">
+                    <p class="copy__section"> <br> <br>
+                        Para llevar a cabo las operaciones con vectores colineales se debe tener en cuenta la linea de
+                        acción
+                        que tienen los vectores, si la linea de accion es la misma para resolver la operaciones se usa
+                        el metodo directo o
+                        algebraico gracias a esta particularidad sumar o restar estos vectores es algo simple. Si los
+                        vectores no comparten
+                        la misma linea de accion el metodo a seguir es el de los <a href="#vectorconcurrente">Vectores
+                            Concurrentes</a>.
+                        <br> <br>
+                        Para sumar vectores colineales de forma analítica, realizaremos una suma de forma de forma
+                        algebraica, utilizando una regla práctica: a los vectores que apunten a la derecha les
+                        colocaremos signo positivo, a los que apunten a la izquierda les colocaremos signo negativo. Si
+                        los vectores son verticales, entonces, a los que apunten hacia arriba les pondremos signo
+                        positivo, y a los que apunten hacia abajo, les ponemos signo negativo.X
+                    </p>
+                    <div class="img-plan">
+                        <img src="img/PLANO.png" alt="" class="img-pla">
+                    </div>
+
+                    <div class="ejemplos">
+                        <h4 class="title-ejemlo">Ejemplo 1</h4>
+                        <p class="copy__section">
+                            Encontrar la resultante R̄ de los vectores Ā y B̄ de forma analítica:
+                        </p>
+                        <div class="img-plan">
+                            <img src="img/Ejemplo1.png" alt="" class="img-eje">
+                        </div>
+                        <p class="copy__section">
+                            Para encontrar el vector resultante, sumamos ambos vectores. A los que apuntan a la derecha
+                            les colocamos signo positivo, a los que apuntan a la izquierda les colocamos signo negativo.
+                            En
+                            este caso, ambos vectores, Ā y B̄, apuntan a la derecha. Ten en cuenta que cada cuadradadito
+                            de
+                            la cuadrícula, equivale a una unidad.
+                        </p>
+                        <div class="img-plan">
+                            <img src="img/Form-ejem2.jpg" alt="" class="img-eje">
+                        </div>
+                        <p class="copy__section">
+                            La representacion grafica quedaria de la siguiente manera:
+                        </p>
+                        <div class="img-plan">
+                            <img src="img/Ejemplo2.png" alt="" class="img-eje">
+                        </div>
+                    </div>
+
+                    <div class="ejemplos">
+                        <h4 class="title-ejemlo">Ejemplo 2</h4>
+                        <p class="copy__section">
+                            Encontrar la resultante R̄ de los vectores Ā , B̄ y C̄:
+                        </p>
+                        <div class="img-plan">
+                            <img src="img/Ejemplo3.png" alt="" class="img-eje">
+                        </div>
+                        <p class="copy__section">
+                            Resolveremos este problema de forma analítica. A los vectores que apunten a la derecha, les
+                            colocaremos signo positivo, a los que apunten a la izquierda, les colocaremos signo
+                            negativo.
+                        </p>
+                        <div class="img-plan">
+                            <img src="img/Form-ejem2.jpg" alt="" class="img-eje">
+                        </div>
+                        <p class="copy__section">
+                            La representacion grafica quedaria de la siguiente manera:
+                        </p>
+                        <div class="img-plan">
+                            <img src="img/Ejemplo4.png" alt="" class="img-eje">
+                        </div>
+                    </div>
+
+                    <div class="ejemplos">
+                        <h4 class="title-ejemlo">Ejemplo 3</h4>
+                        <p class="copy__section">
+                            Encontrar la resultante de los vectores Ā, B̄, C̄, D̄ y Ē.
+                        </p>
+                        <div class="img-plan">
+                            <img src="img/Ejemplo5.png" alt="" class="img-eje">
+                        </div>
+                        <p class="copy__section">
+                            Resolveremos este problema de forma analítica. A los vectores que apunten a la derecha, les
+                            colocaremos signo positivo, a los que apunten a la izquierda, les colocaremos signo
+                            negativo.
+                        </p>
+                        <div class="img-plan">
+                            <img src="img/Form-ejem3.jpg" alt="" class="img-eje">
+                        </div>
+                        <p class="copy__section">
+                            La representacion grafica quedaria de la siguiente manera:
+                        </p>
+                        <div class="img-plan">
+                            <img src="img/Ejemplo6.png" alt="" class="img-eje">
+                        </div>
+                        <p class="copy__section">
+                            Para mas informacion sobre vectores colineales te recomendamos ver los siguientes videos.
+                        </p>
+                    </div>
+                    <article class="container-cards">
+                        <div class="video">
+                            <iframe width="342" height="200" src="https://www.youtube.com/embed/nj4ZiX2fM0o"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="YT"></iframe>
+                        </div>
+                        <div class="video">
+                            <iframe width="342" height="200" src="https://www.youtube.com/embed/iuHhdEPhh_0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="YT"></iframe>
+                        </div>
+                        <div class="video">
+                            <iframe width="342" height="200" src="https://www.youtube.com/embed/za-I2Qq0elw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="YT"></iframe>
+                        </div>
+
+                    </article>
+                    <h3 class="subtitle" id="vectorconcurrente">Suma y Resta de Vectores Concurrentes</h3>
+                    <div class="imgtitle">
+                        <img src="img/vectoresconcurrentes.png" alt="" class="img-vecs">
+                    </div>
+
+                    <p class="copy__section"> <br> <br>
+                        Los vectores pueden clasificarse de distinto modo de acuerdo a sus características. Se llama
+                        vectores concurrentes a aquellos que atraviesan un mismo punto. Debido a que, al pasar por dicho
+                        punto dan lugar a la creación de un ángulo, los vectores concurrentes también se denominan
+                        vectores angulares.
+                    </p>
+
+                    <h3 class="subtitle" id="triangulo">Suma y Resta de Vectores Concurrentes metodo del triangulo</h3>
+                    <div class="img-plan">
+                        <img src="img/sumavectores2.png" alt="" class="img-trian">
+
+                    </div>
+                    <p class="copy__section"> <br> <br>
+                        El método del triángulo es un método que permite hallar la suma o resultante de dos vectores. El
+                        método consiste en ubicar los vectores uno a continuación del otro, unidos mediante cabeza y
+                        cola. El vector resultante se obtiene uniendo la cola del primero con la cabeza del último.
+                    </p>
+                    <div class="ejemplos">
+                        <h4 class="title-ejemlo">Ejemplo 1</h4>
+                        <p class="copy__section">
+                            De manera gráfica, trazar el vector resultante de los vectores Ā y B̄.
+                        </p>
+                        <div class="img-plan">
+                            <img src="img/método-del-triángulo-para-sumar-vectores-3.jpg" alt="" class="img-eje">
+                        </div>
+                        <p class="copy__section">
+                            El vector resultante, es decir, el vector que resulta de sumar los vectores Ā y B̄, lo vamos
+                            a obtener mediante el método del triángulo. Por ello, vamos a trasladar los vectores Ā y B̄,
+                            de tal manera que los vectores Ā y B̄ se encuentren uno a continuación del otro, unidos
+                            mediante cabeza y cola.
+                            <br><br>
+                            El vector resultante, lo veremos de color negro, y se obtiene trazando un vector que parte
+                            de la cola del primero y termina en la cabeza del último.
+
+
+                        </p>
+                        <div class="img-plan">
+                            <img src="img/metodo-triangulo2.png" alt="" class="img-eje">
+                        </div>
+                        <p class="copy__section">
+                            En este ejercicio, tenemos que calcular el vector resultante, es decir, el vector que
+                            resulta de sumar los vectores Ā, B̄ y C̄:
+                            <br><br>
+                            En el gráfico, podemos ver que los vectores Ā y B̄, se encuentran uno a continuación del
+                            otro, unidos mediante cabeza y cola, por ello, podemos sumarlos usando el método del
+                            triángulo. El vector que resulta de sumar el vector Ā y el vector B̄, es el vector que parte
+                            de la cola de Ā y termina en la cabeza de B̄, y ese vector, es el vector C̄. Es decir, la
+                            suma del vector Ā con el vector B̄, es el vector C̄. Por lo tanto:
+
+                        </p>
+                        <div class="img-plan">
+                            <img src="img/form-trian1.jpg" alt="" class="img-eje">
+                        </div>
+                    </div>
+                    <div class="ejemplos">
+                        <h4 class="title-ejemlo">Ejemplo 2</h4>
+                        <p class="copy__section">
+                            Hallar el valor del vector R (resultante)
+                        </p>
+                        <div class="img-plan">
+                            <img src="img/trian1.jpg" alt="" class="img-eje">
+                        </div>
+                        <p class="copy__section">
+                            Siguiendo la regla comentada anteriormente nos damos cuenta que al unir la cola del vector Ā
+                            con
+                            la cabeza del vector B̄ nos da un nuevo vector conocido como Resultante, gracias al grafico
+                            podemos observar que
+                            la magnitud del vector resultante es equivalente a 7.
+                            <br><br>
+                            El vector resultante, lo veremos de color negro, y se obtiene trazando un vector que parte
+                            de la cola del primero y termina en la cabeza del último.
+
+
+                        </p>
+                        <div class="img-plan">
+                            <img src="img/metodo-triangulo2.png" alt="" class="img-eje">
+                        </div>
+                        <p class="copy__section">
+                            En este ejercicio, tenemos que calcular el vector resultante, es decir, el vector que
+                            resulta de sumar los vectores Ā, B̄ y C̄:
+                            <br><br>
+                            En el gráfico, podemos ver que los vectores Ā y B̄, se encuentran uno a continuación del
+                            otro, unidos mediante cabeza y cola, por ello, podemos sumarlos usando el método del
+                            triángulo. El vector que resulta de sumar el vector Ā y el vector B̄, es el vector que parte
+                            de la cola de Ā y termina en la cabeza de B̄, y ese vector, es el vector C̄. Es decir, la
+                            suma del vector Ā con el vector B̄, es el vector C̄. Por lo tanto:
+
+                        </p>
+                        <div class="img-plan">
+                            <img src="img/form-trian1.jpg" alt="" class="img-eje">
+                        </div>
+                    </div>
+
+                    <div class="ejemplos">
+                        <h4 class="title-ejemlo">Ejemplo 3</h4>
+                        <p class="copy__section">
+                            Para el sistema de vectores mostrado, encontrar la magnitud del vector resultante, sabiendo
+                            que
+                            la magnitud del vector A es = 8 y que la magnitud del vector B=6. √16 = 4
+                        </p>
+                        <div class="img-plan">
+                            <img src="img/trian2.jpg" alt="" class="img-eje">
+                        </div>
+                        <p class="copy__section">
+                            Para este ejercicio sera necesario utilizar el teormea de pitagoras, el cual nos dice que
+                            h<sup>2</sup>=<sub>1</sub>C<sup>2</sup>+<sub>2</sub>C<sup>2</sup>
+                            donde h es la hipotenusa, C es un cateto.
+                            <br><br>
+                            Lo siguiente que tenemos que hacer es remplazar la formula del teorema de pitagoras.
+                        </p>
+                        <p class="Formula">
+                            R <sup>2</sup>= 8<sup>2</sup> + 6<sup>2</sup>
+                        </p>
+                        <p class="copy__section">
+                            para seguir con la operacion sera necesario cancelar pasar la potencia de "R" al otro lado
+                            como raiz cuadrda, lo que nos daria algo asi.
+                        </p>
+                        <p class="Formula">
+                            R=√((8)<sup>2</sup> + (6)<sup>2</sup>)
+                        </p>
+                        <p class="copy__section">luego simplemente procedemos a resolver la ecuacion.</p>
+                        <p class="Formula">
+                            R=√((8)<sup>2</sup> + (6)<sup>2</sup>) <br>
+                            R=√(64+36) <br>
+                            R=√(100) <br>
+                            R=10
+                        </p>
+                        <p class="copy__section">
+                            De esta manera concluiriamos el Ejemplo numero 3, asi quedaria representada la grafica.
+                        </p>
+
+                        <div class="img-plan">
+                            <img src="img/trian3.jpg" alt="" class="img-eje">
+                        </div>
+                        <p class="copy__section">
+                            Para mas informacion sobre vectores colineales te recomendamos ver los siguientes videos.
+                        </p>
+                        <article class="container-cards">
+                            <div class="video">
+                                <iframe width="342" height="200" src="https://www.youtube.com/embed/wTaXEsA_GZ4"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="video">
+                                <iframe width="342" height="200" src="https://www.youtube.com/embed/XcEZ4q1jUEc"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="video">
+                                <iframe width="342" height="200" src="https://www.youtube.com/embed/9ycN7cURBwc"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </article>
+
+                    </div>
+
+
+                    <h3 class="subtitle" id="paralelogramo">Suma y Resta de Vectores Concurrentes metodo del
+                        paralelogramo</h3>
+                    <p class="copy__section">
+                        <br>
+                        El método del paralelogramo sirve para hallar el módulo de la resultante de dos vectores que
+                        poseen un mismo origen, por ende son vectores concurrentes y coplanares. Para entender mejor,
+                        representemos dos vectores A y B, el vector resultante o suma de dichos vectores será el vector
+                        R.
+                    </p>
+                    <div class="img-plan">
+                        <img src="img/suma-vectores-regla-del-paralelgramo.png" alt="" class="img-eje">
+                    </div>
+                    <p class="copy__section">
+                        Sean dos vectores en un plano, u = (1,2) y v = (3,0). ¿Cuál es el vector suma u+v? <br> <br>
+                        Para utilizar el método del paralelogramo, se dibujan los vectores desde un mismo punto de
+                        origen. Después, se dibujan dos segmentos paralelos que empiezan donde finalizan los vectores u
+                        y v, formando un paralelogramo. <br>
+                        Como resultado, se obtendrá el vector suma u+v, que será la diagonal del paralelogramo con
+                        origen en el punto de aplicación de ambos vectores. <br> <br>
+                    </p>
+                    <div class="img-plan">
+                        <img src="img/paralelogramo.jpg" alt="" class="img-eje">
+                    </div>
+                    <p class="copy__section">
+                        La formula para sumar los vectores por el metodo del paralelogramo es la siguiente.
+                    </p>
+
+                    <div class="img-plan">
+                        <img src="img/Form-paralelo.jpg" alt="" class="img-eje">
+                    </div>
+
+                    <h3 class="subtitle" id="poligono">Suma y Resta de Vectores Concurrentes metodo del Poligono</h3>
+                    <p class="copy__section"> <br> <br>
+                        La suma de vectores es un proceso que depende del tipo de vector que se piense sumar, los tipos
+                        de
+                        vectores son dos que son los <a href="">Vectores Colineales</a> y <a href="">Vectores
+                            Concurrentes</a>
+                        los cuales se diferencian por las lineas de accion que contienen.
+                    </p>
+                </section>
+
+                <article class="container-cards">
+                    <div class="card">
+                        <img src="img/vector.png" class="card__img">
+                        <div class="cards__text">
+                            <p class="card__list">Basico</p>
+                            <h3 class="card__title">Vectores<span class="point">.</span></h3>
+                            <p class="card__copy">En este curso aprenderas: <br> Tipos de vectores, Componentes de un
+                                vector, Para que sirven los vectores</p>
+                            <a href="#" class="card__button">Comienza el curso</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/sumavector.jpg" class="card__img">
+                        <div class="cards__text">
+                            <p class="card__list">Intermedio</p>
+                            <h3 class="card__title">Vectores<span class="point">.</span></h3>
+                            <p class="card__copy">En este curso aprenderas: <br> Suma de vectores, Formas de sumar los
+                                vectores, Descomposicion de Vectores.</p>
+                            <a href="#" class="card__button">Comienza el curso</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/cinematica.png" class="card__img">
+                        <div class="cards__text">
+                            <p class="card__list">Intermedio</p>
+                            <h3 class="card__title">Cinematica<span class="point">.</span></h3>
+                            <p class="card__copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorum
+                                sit molestias ipsam at veritatis ut esse eius, dolor est!</p>
+                            <a href="#" class="card__button">Comienza el curso</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="projects container">
+            <h2 class="subtitle">Cursos Nuevos<span class="point">.</span></h2>
+            <p class="copy__section">Explora todos nuestros cursos sin necesidad de registro</p>
+            <article class="container-bg">
+                <div class="card">
+                    <div class="cards__text">
+                        <h3 class="card__title">Vectores<span class="point">.</span></h3>
+                        <p class="card__date">18 de Octubre 2021</p>
+                        <p class="card__copy">Si no sabes nada de suma vectores y deseas aprender este curso es para ti
+                        </p>
+                        <a href="#" class="card__button">Comienza este curso</a>
+                    </div>
+                </div>
+                <div class="background">
+                    <img src="img/background1.jpg" class="background__img">
+                    <div class="background__text">
+                        <h3 class="background__title">Isaac Newton</h3>
+                        <p class="background__copy">A cada acción siempre se opone una reacción igual pero de sentido
+                            contrario.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cards__text">
+                        <h3 class="card__title">Cinematica<span class="point">.</span></h3>
+                        <p class="card__date">10 de Noviembre 2021</p>
+                        <p class="card__copy">Si quieres dominar la Cinematica, este curso es un gran inicio</p>
+                        <a href="#" class="card__button">Comienza este curso</a>
+                    </div>
+                </div>
+                <div class="background">
+                    <img src="img/background2.jpg" class="background__img">
+                    <div class="background__text">
+                        <h3 class="background__title">Albert Einstein</h3>
+                        <p class="background__copy">No te preocupes por tus dificultades en matemáticas. Te puedo
+                            asegurar que las mías son aun mayores.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="email container container--modifier">
+            <h2 class="subtitle subtitle--modifier">Somos tu mejor opción para aprender Física Mecánica<span
+                    class="point">.</span></h2>
+
+            <p class="copy__section copy__section--modifier">Estudia con nosotros y dominaras todos los temas que la
+                física mecánica <br> te pueda ofrecer</p>
+
+            <div class="check">
+                <div class="check__item">
+                    <i class='bx bx-check'></i>
+                    <div class="check__numbers">
+                        <p class="check__number">+300</p>
+                        <p class="check__copy">Estudiantes</p>
+                    </div>
+                </div>
+                <div class="check__item">
+                    <i class='bx bx-check'></i>
+                    <div class="check__numbers">
+                        <p class="check__number">+80</p>
+                        <p class="check__copy">Horas en cursos</p>
+                    </div>
+                </div>
+                <div class="check__item">
+                    <i class='bx bx-check'></i>
+                    <div class="check__numbers">
+                        <p class="check__number">+200</p>
+                        <p class="check__copy">Estudiantes satisfechos</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+</body>
+
+</html>
